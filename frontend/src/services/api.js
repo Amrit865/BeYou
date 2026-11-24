@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = '/api';
+const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 const client = axios.create({
   baseURL: API_BASE,
@@ -43,7 +43,7 @@ export const api = {
     return res.data;
   },
 
-  getDownloadUrl: (id) => `/api/designs/download/${id}`,
+  getDownloadUrl: (id) => `${API_BASE}/designs/download/${id}`,
 
   // Core Feature 2: AI Fashion Image Analysis
   analyzeImage: async (file) => {
