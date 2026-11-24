@@ -2,7 +2,9 @@
 
 > **Tagline:** "Design Your Style, Define Yourself."  
 > **Academic Domain:** Deep Learning • Multimodal Vision AI • Generative Image Synthesis • Full-Stack Web Development  
-> **Target Audience:** B.Tech CSE (AI & Machine Learning) Major Capstone Project
+> **Target Audience:** B.Tech CSE (AI & Machine Learning) Major Capstone Project  
+> **Frontend Live Deployment:** [https://be-you-1rlb.vercel.app/](https://be-you-1rlb.vercel.app/)  
+> **Backend API Live Deployment:** [https://beyou-6.onrender.com](https://beyou-6.onrender.com)
 
 ---
 

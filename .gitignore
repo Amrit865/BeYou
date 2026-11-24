@@ -42,6 +42,11 @@ pnpm-debug.log*
 !frontend/dist/**
 
 # Databases & local user files
+*.db
+*.sqlite
+*.sqlite3
+beyou.db
+backend/beyou.db
 *.db-journal
 *.sqlite3-journal
 

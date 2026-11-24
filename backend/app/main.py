@@ -63,7 +63,7 @@ if frontend_dist_path.exists() and (frontend_dist_path / "index.html").exists():
         app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="static_assets")
 
 @app.get("/")
-def serve_root():
+def root():
     if frontend_dist_path.exists() and (frontend_dist_path / "index.html").exists():
         return FileResponse(frontend_dist_path / "index.html")
     return {
@@ -72,7 +72,8 @@ def serve_root():
         "tagline": settings.TAGLINE,
         "version": settings.VERSION,
         "scope": "Women's Fashion Only (5 Categories, 4 Styles)",
-        "docs_url": "/docs"
+        "docs_url": "/docs",
+        "frontend_url": "https://be-you-1rlb.vercel.app/"
     }
 
 @app.get("/{full_path:path}")
